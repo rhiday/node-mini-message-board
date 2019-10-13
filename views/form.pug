@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+
+    //from https://teamtreehouse.com/library/creating-a-registration-form-with-pug-jade-2
+    form(method='POST' action='/new')
+        div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='first name' name='name')
+        div.form-group
+            label(for='text') Message:
+            input#text.form-control(type='text', placeholder='message' name='text')
+        button.btn.btn-primary(type='submit') Submit
