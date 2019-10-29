@@ -4,5 +4,5 @@ block content
   h1= title
   each message in messages
     p #{message.user} says #{message.text} at #{message.added}
-  a('/') Add new message
+  a(href='/new') Add new message
 
